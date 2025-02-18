@@ -62,9 +62,6 @@ for a in range(0,3,1):
 #p.plot(x,y)
 #p.show()
 
-
-
-
 def main():
     class Person:
 
@@ -85,4 +82,10 @@ def main():
     print(dict_att)
     return dict_att
 
-main()
+
+if tracker == "You Win!":
+    win += 1
+elif tracker == "you lose!":
+    lose += 1
+elif tracker == "Draw!":
+    draw += 1
