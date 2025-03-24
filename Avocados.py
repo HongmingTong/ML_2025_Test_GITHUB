@@ -68,7 +68,7 @@ for j in range(5,25):
     score_array2.append(score2)
 
 max_score2 = max(score_array2)
-best_num_estimator=score_array2.index(max_score2) + 1
+best_num_estimator=score_array2.index(max_score2)+5
 print('Best Random Forest score using validation set is: ',max_score2, "with the best number of estimator is",best_num_estimator)
 
 
