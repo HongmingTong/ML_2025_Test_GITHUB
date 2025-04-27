@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('books2.csv')
+df = pd.read_csv('books.csv')
 min_vote=275000
 mean_vote=df['ratings_count'].mean()
 df['weighted_rank']=(df['ratings_count']/(df['ratings_count']+min_vote))*df['average_rating']+(min_vote/(df['ratings_count']+min_vote))*mean_vote
