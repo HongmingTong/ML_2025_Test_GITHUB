@@ -6,7 +6,7 @@ from tensorflow.keras.layers import Embedding, SimpleRNN, Dense
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-df = pd.read_csv('IMDB Dataset full.csv')  ## already cleaned
+df = pd.read_csv('IMDB Dataset.csv')  ## already cleaned
 df = df.dropna()
 x = df.iloc[:, 0].str.lower().to_list()
 y = df.iloc[:, 1].str.lower().to_list()
